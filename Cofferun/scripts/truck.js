@@ -21,6 +21,7 @@
     var customerIdArray = Object.keys(this.db.getAll());
     console.log("Truck #" + this.truckId + " has pending orders:");
     customerIdArray.forEach(function(id) {
+      /*eslint no-console: ["error", { allow: ["warn", "error","log"] }] */
       console.log(this.db.get(id));
     });
   }.bind(this);

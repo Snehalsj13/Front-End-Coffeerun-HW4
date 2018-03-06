@@ -16,5 +16,6 @@
     myTruck.createOrder.call(myTruck, data);
     checkList.addRow.call(checkList, data);
   });
+  /*eslint no-console: ["error", { allow: ["warn", "error","log"] }] */
   console.log(formHandler);
 })(window);

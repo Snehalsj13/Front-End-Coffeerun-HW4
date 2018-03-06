@@ -24,6 +24,8 @@
         console.log(item.name + " is " + item.value);
       });
       console.log(data);
+	  $("#ex1 p").text("Thank you for your payment, " + data.name);
+      $("#ex1").modal();
       fn(data);
       this.reset();
       this.elements[0].focus();
